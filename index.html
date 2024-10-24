@@ -1,0 +1,2580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-10-24 Thu 16:02 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>index</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Kristian Alexander P" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+</head>
+<body>
+<div id="content">
+<h1 class="title">index</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orga68ac91">Configuration File</a></li>
+</ul>
+</div>
+</div>
+<p>
+This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a></i> configuration files.
+</p>
+<div id="outline-container-orga68ac91" class="outline-2">
+<h2 id="orga68ac91">Configuration File</h2>
+<div class="outline-text-2" id="text-orga68ac91">
+<div class="org-src-container">
+<pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">-*- eval: (rainbow-mode 1) -*-</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">See dunst(5) for all configuration options</span>
+
+[<span style="color: #228b22;">global</span>]
+    <span style="color: #b22222;">### </span><span style="color: #b22222;">Display ###</span>
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Which monitor should the notifications be displayed on.</span>
+    <span style="color: #b8860b;">monitor</span> = 0
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Display notification on focused monitor.  Possible modes are:</span>
+    <span style="color: #b22222;">#   </span><span style="color: #b22222;">mouse: follow mouse pointer</span>
+    <span style="color: #b22222;">#   </span><span style="color: #b22222;">keyboard: follow window with keyboard focus</span>
+    <span style="color: #b22222;">#   </span><span style="color: #b22222;">none: don't follow anything</span>
+    <span style="color: #b22222;">#</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">"keyboard" needs a window manager that exports the</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">_NET_ACTIVE_WINDOW property.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">This should be the case for almost all modern window managers.</span>
+    <span style="color: #b22222;">#</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">If this option is set to mouse or keyboard, the monitor option</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">will be ignored.</span>
+    <span style="color: #b8860b;">follow</span> = none
+
+    <span style="color: #b22222;">### </span><span style="color: #b22222;">Geometry ###</span>
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">dynamic width from 0 to 300</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">width = (0, 300)</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">constant width of 300</span>
+    <span style="color: #b8860b;">width</span> = (0, 600)
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">The maximum height of a single notification, excluding the frame.</span>
+    <span style="color: #b8860b;">height</span> = 222
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Position the notification in the top right corner</span>
+    <span style="color: #b8860b;">origin</span> = top-right
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Offset from the origin</span>
+    <span style="color: #b8860b;">offset</span> = 25x50
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Scale factor. It is auto-detected if value is 0.</span>
+    <span style="color: #b8860b;">scale</span> = 0
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Maximum number of notification (0 means no limit)</span>
+    <span style="color: #b8860b;">notification_limit</span> = 20
+
+    <span style="color: #b22222;">### </span><span style="color: #b22222;">Progress bar ###</span>
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Turn on the progess bar. It appears when a progress hint is passed with</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">for example dunstify -h int:value:12</span>
+    <span style="color: #b8860b;">progress_bar</span> = true
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Set the progress bar height. This includes the frame, so make sure</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">it's at least twice as big as the frame width.</span>
+    <span style="color: #b8860b;">progress_bar_height</span> = 5
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Set the frame width of the progress bar</span>
+    <span style="color: #b8860b;">progress_bar_frame_width</span> = 0
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Set the minimum width for the progress bar</span>
+    <span style="color: #b8860b;">progress_bar_min_width</span> = 0
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Set the maximum width for the progress bar</span>
+    <span style="color: #b8860b;">progress_bar_max_width</span> = 444
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Corner radius for the progress bar. 0 disables rounded corners.</span>
+    <span style="color: #b8860b;">progress_bar_corner_radius</span> = 0
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Corner radius for the icon image.</span>
+    <span style="color: #b8860b;">icon_corner_radius</span> = 0
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Show how many messages are currently hidden (because of</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">notification_limit).</span>
+    <span style="color: #b8860b;">indicate_hidden</span> = yes
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">The transparency of the window.  Range: [0; 100].</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">This option will only work if a compositing window manager is</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">present (e.g. xcompmgr, compiz, etc.). (X11 only)</span>
+    <span style="color: #b8860b;">transparency</span> = 3
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Draw a line of "separator_height" pixel height between two</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">notifications.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Set to 0 to disable.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">If gap_size is greater than 0, this setting will be ignored.</span>
+    <span style="color: #b8860b;">separator_height</span> = 2
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Padding between text and separator.</span>
+    <span style="color: #b8860b;">padding</span> = 8
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Horizontal padding.</span>
+    <span style="color: #b8860b;">horizontal_padding</span> = 11
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Padding between text and icon.</span>
+    <span style="color: #b8860b;">text_icon_padding</span> = 0
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Defines width in pixels of frame around the notification window.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Set to 0 to disable.</span>
+    <span style="color: #b8860b;">frame_width</span> = 0
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Defines color of the frame around the notification window.</span>
+    <span style="color: #b8860b;">frame_color</span> = <span style="color: #bc8f8f;">"#e5e9f0"</span>
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Size of gap to display between notifications - requires a compositor.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">If value is greater than 0, separator_height will be ignored and a border</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">of size frame_width will be drawn around each notification instead.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Click events on gaps do not currently propagate to applications below.</span>
+    <span style="color: #b8860b;">gap_size</span> = 0
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Define a color for the separator.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">possible values are:</span>
+    <span style="color: #b22222;">#  </span><span style="color: #b22222;">* auto: dunst tries to find a color fitting to the background;</span>
+    <span style="color: #b22222;">#  </span><span style="color: #b22222;">* foreground: use the same color as the foreground;</span>
+    <span style="color: #b22222;">#  </span><span style="color: #b22222;">* frame: use the same color as the frame;</span>
+    <span style="color: #b22222;">#  </span><span style="color: #b22222;">* anything else will be interpreted as a X color.</span>
+    <span style="color: #b8860b;">separator_color</span> = <span style="color: #bc8f8f;">"#e5e9f0"</span>
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Sort messages by urgency.</span>
+    <span style="color: #b8860b;">sort</span> = yes
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Don't remove messages, if the user is idle (no mouse or keyboard input)</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">for longer than idle_threshold seconds.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Set to 0 to disable.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">A client can set the 'transient' hint to bypass this. See the rules</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">section for how to disable this if necessary</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">idle_threshold = 120</span>
+
+    <span style="color: #b22222;">### </span><span style="color: #b22222;">Text ###</span>
+
+    <span style="color: #b8860b;">font</span> = JetBrainsMonoNL Nerd Font Mono 10
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">The spacing between lines.  If the height is smaller than the</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">font height, it will get raised to the font height.</span>
+    <span style="color: #b8860b;">line_height</span> = 0
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Possible values are:</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">full: Allow a small subset of html markup in notifications:</span>
+    <span style="color: #b22222;">#        </span><span style="color: #b22222;">&lt;b&gt;bold&lt;/b&gt;</span>
+    <span style="color: #b22222;">#        </span><span style="color: #b22222;">&lt;i&gt;italic&lt;/i&gt;</span>
+    <span style="color: #b22222;">#        </span><span style="color: #b22222;">&lt;s&gt;strikethrough&lt;/s&gt;</span>
+    <span style="color: #b22222;">#        </span><span style="color: #b22222;">&lt;u&gt;underline&lt;/u&gt;</span>
+    <span style="color: #b22222;">#</span>
+    <span style="color: #b22222;">#        </span><span style="color: #b22222;">For a complete reference see</span>
+    <span style="color: #b22222;">#        </span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">&lt;https://docs.gtk.org/Pango/pango_markup.html&gt;.</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">#</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span"># </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">strip: This setting is provided for compatibility with some broken</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">#        </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">clients that send markup even though it's not enabled on the</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">#        </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">server. Dunst will try to strip the markup but the parsing is</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">#        </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">simplistic so using this option outside of matching rules for</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">#        </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">specific applications *IS GREATLY DISCOURAGED*.</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">#</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span"># </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">no:    Disable markup parsing, incoming notifications will be treated as</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">#        </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">plain text. Dunst will not advertise that it has the body-markup</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">#        </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">capability if this is set as a global setting.</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">#</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span"># </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">It's important to note that markup inside the format option will be parsed</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span"># </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">regardless of what this is set to.</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b8860b;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">markup</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span"> = full
+
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span"># </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">The format of the message.  Possible variables are:</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">#   </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">%a  appname</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">#   </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">%s  summary</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">#   </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">%b  body</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">#   </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">%i  iconname (including its path)</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">#   </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">%I  iconname (without its path)</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">#   </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">%p  progress value if set ([  0%] to [100%]) or nothing</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">#   </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">%n  progress value if set without any extra characters</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">#   </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">%%  Literal %</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span"># </a></span><span style="color: #b22222;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">Markup is allowed</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">
+    </a><span style="color: #b8860b;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">format</a></span><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span"> = </a><span style="color: #bc8f8f;"><a href="https://docs.gtk.org/Pango/pango_markup.html&gt;.
+    #
+    # strip: This setting is provided for compatibility with some broken
+    #        clients that send markup even though it's not enabled on the
+    #        server. Dunst will try to strip the markup but the parsing is
+    #        simplistic so using this option outside of matching rules for
+    #        specific applications *IS GREATLY DISCOURAGED*.
+    #
+    # no:    Disable markup parsing, incoming notifications will be treated as
+    #        plain text. Dunst will not advertise that it has the body-markup
+    #        capability if this is set as a global setting.
+    #
+    # It's important to note that markup inside the format option will be parsed
+    # regardless of what this is set to.
+    markup = full
+
+    # The format of the message.  Possible variables are:
+    #   %a  appname
+    #   %s  summary
+    #   %b  body
+    #   %i  iconname (including its path)
+    #   %I  iconname (without its path)
+    #   %p  progress value if set ([  0%] to [100%]) or nothing
+    #   %n  progress value if set without any extra characters
+    #   %%  Literal %
+    # Markup is allowed
+    format = &quot;&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span">"&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#f9f9f9'&gt;%s&lt;/span&gt;</a>\n%b"</span>
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Alignment of message text.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Possible values are "left", "center" and "right".</span>
+    <span style="color: #b8860b;">alignment</span> = left
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Vertical alignment of message text and icon.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Possible values are "top", "center" and "bottom".</span>
+    <span style="color: #b8860b;">vertical_alignment</span> = center
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Show age of message if message is older than show_age_threshold</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">seconds.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Set to -1 to disable.</span>
+    <span style="color: #b8860b;">show_age_threshold</span> = 60
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Specify where to make an ellipsis in long lines.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Possible values are "start", "middle" and "end".</span>
+    <span style="color: #b8860b;">ellipsize</span> = middle
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Ignore newlines '\n' in notifications.</span>
+    <span style="color: #b8860b;">ignore_newline</span> = no
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Stack together notifications with the same content</span>
+    <span style="color: #b8860b;">stack_duplicates</span> = true
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Hide the count of stacked notifications with the same content</span>
+    <span style="color: #b8860b;">hide_duplicate_count</span> = true
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Display indicators for URLs (U) and actions (A).</span>
+    <span style="color: #b8860b;">show_indicators</span> = yes
+
+    <span style="color: #b22222;">### </span><span style="color: #b22222;">Icons ###</span>
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Recursive icon lookup. You can set a single theme, instead of having to</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">define all lookup paths.</span>
+    <span style="color: #b8860b;">enable_recursive_icon_lookup</span> = true
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Set icon theme (only used for recursive icon lookup)</span>
+    <span style="color: #b8860b;">icon_theme</span> = Papirus
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">You can also set multiple icon themes, with the leftmost one being used first.</span>
+    <span style="color: #b8860b;">icon_theme</span> = <span style="color: #bc8f8f;">"Adwaita, breeze"</span>
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Align icons left/right/top/off</span>
+    <span style="color: #b8860b;">icon_position</span> = left
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Scale small icons up to this size, set to 0 to disable. Helpful</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">for e.g. small files or high-dpi screens. In case of conflict,</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">max_icon_size takes precedence over this.</span>
+    <span style="color: #b8860b;">min_icon_size</span> = 32
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Scale larger icons down to this size, set to 0 to disable</span>
+    <span style="color: #b8860b;">max_icon_size</span> = 128
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Paths to default icons (only neccesary when not using recursive icon lookup)</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/</span>
+
+    <span style="color: #b22222;">### </span><span style="color: #b22222;">History ###</span>
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Should a notification popped up from history be sticky or timeout</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">as if it would normally do.</span>
+    <span style="color: #b8860b;">sticky_history</span> = yes
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Maximum amount of notifications kept in history</span>
+    <span style="color: #b8860b;">history_length</span> = 20
+
+    <span style="color: #b22222;">### </span><span style="color: #b22222;">Misc/Advanced ###</span>
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">dmenu path.</span>
+    <span style="color: #b22222;">#</span><span style="color: #b22222;">dmenu = /usr/bin/dmenu -p dunst:</span>
+    <span style="color: #b8860b;">dmenu</span> = rofi -dmenu
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Browser for opening urls in context menu.</span>
+    <span style="color: #b8860b;">browser</span> = /usr/bin/xdg-open
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Always run rule-defined scripts, even if the notification is suppressed</span>
+    <span style="color: #b8860b;">always_run_script</span> = true
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Define the title of the windows spawned by dunst</span>
+    <span style="color: #b8860b;">title</span> = Dunst
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Define the class of the windows spawned by dunst</span>
+    <span style="color: #b8860b;">class</span> = Dunst
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Define the corner radius of the notification window</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">in pixel size. If the radius is 0, you have no rounded</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">corners.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">The radius will be automatically lowered if it exceeds half of the</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">notification height to avoid clipping text and/or icons.</span>
+    <span style="color: #b8860b;">corner_radius</span> = 8
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Ignore the dbus closeNotification message.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Useful to enforce the timeout set by dunst configuration. Without this</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">parameter, an application may close the notification sent before the</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">user defined timeout.</span>
+    <span style="color: #b8860b;">ignore_dbusclose</span> = false
+
+    <span style="color: #b22222;">### </span><span style="color: #b22222;">Wayland ###</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">These settings are Wayland-specific. They have no effect when using X11</span>
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Uncomment this if you want to let notications appear under fullscreen</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">applications (default: overlay)</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">layer = top</span>
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Set this to true to use X11 output on Wayland.</span>
+    <span style="color: #b8860b;">force_xwayland</span> = false
+
+    <span style="color: #b22222;">### </span><span style="color: #b22222;">Legacy</span>
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Use the Xinerama extension instead of RandR for multi-monitor support.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">This setting is provided for compatibility with older nVidia drivers that</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">do not support RandR and using it on systems that support RandR is highly</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">discouraged.</span>
+    <span style="color: #b22222;">#</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">By enabling this setting dunst will not be able to detect when a monitor</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">is connected or disconnected which might break follow mode if the screen</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">layout changes.</span>
+    <span style="color: #b8860b;">force_xinerama</span> = false
+
+    <span style="color: #b22222;">### </span><span style="color: #b22222;">mouse</span>
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Defines list of actions for each mouse event</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Possible values are:</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">* none: Don't do anything.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">* do_action: Invoke the action determined by the action_name rule. If there is no</span>
+    <span style="color: #b22222;">#              </span><span style="color: #b22222;">such action, open the context menu.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">* open_url: If the notification has exactly one url, open it. If there are multiple</span>
+    <span style="color: #b22222;">#             </span><span style="color: #b22222;">ones, open the context menu.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">* close_current: Close current notification.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">* close_all: Close all notifications.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">* context: Open context menu for the notification.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">* context_all: Open context menu for all notifications.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">These values can be strung together for each mouse event, and</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">will be executed in sequence.</span>
+    <span style="color: #b8860b;">mouse_left_click</span> = do_action, close_current
+    <span style="color: #b8860b;">mouse_middle_click</span> = do_action, close_current
+    <span style="color: #b8860b;">mouse_right_click</span> = close_current
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Experimental features that may or may not work correctly. Do not expect them</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">to have a consistent behaviour across releases.</span>
+[<span style="color: #228b22;">experimental</span>]
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Calculate the dpi to use on a per-monitor basis.</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">If this setting is enabled the Xft.dpi value will be ignored and instead</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">dunst will attempt to calculate an appropriate dpi value for each monitor</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">using the resolution and physical size. This might be useful in setups</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">where there are multiple screens with very different dpi values.</span>
+    <span style="color: #b8860b;">per_monitor_dpi</span> = false
+
+[<span style="color: #228b22;">urgency_low</span>]
+    <span style="color: #b8860b;">msg_urgency</span> = low
+    <span style="color: #b8860b;">background</span> = <span style="color: #bc8f8f;">"#3b4252"</span>
+    <span style="color: #b8860b;">foreground</span> = <span style="color: #bc8f8f;">"#4c566a"</span>
+
+[<span style="color: #228b22;">urgency_normal</span>]
+    <span style="color: #b8860b;">msg_urgency</span> = normal
+    <span style="color: #b8860b;">background</span> = <span style="color: #bc8f8f;">"#434c5e"</span>
+    <span style="color: #b8860b;">foreground</span> = <span style="color: #bc8f8f;">"#e5e9f0"</span>
+
+[<span style="color: #228b22;">urgency_critical</span>]
+    <span style="color: #b8860b;">msg_urgency</span> = critical
+    <span style="color: #b8860b;">background</span> = <span style="color: #bc8f8f;">"#bf616a"</span>
+    <span style="color: #b8860b;">foreground</span> = <span style="color: #bc8f8f;">"#eceff4"</span>
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Every section that isn't one of the above is interpreted as a rules to</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">override settings for certain messages.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Messages can be matched by</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">appname (discouraged, see desktop_entry)</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">body</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">category</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">desktop_entry</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">icon</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">match_transient</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">msg_urgency</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">stack_tag</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">summary</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">and you can override the</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">background</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">foreground</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">format</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">frame_color</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">fullscreen</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">new_icon</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">set_stack_tag</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">set_transient</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">set_category</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">timeout</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">urgency</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">icon_position</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">skip_display</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">history_ignore</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">action_name</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">word_wrap</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">ellipsize</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">alignment</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">hide_text</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Shell-like globbing will get expanded.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Instead of the appname filter, it's recommended to use the desktop_entry filter.</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">GLib based applications export their desktop-entry name. In comparison to the appname,</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">the desktop-entry won't get localized.</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">SCRIPTING</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">You can specify a script that gets run when the rule matches by</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">setting the "script" option.</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">The script will be called as follows:</span>
+<span style="color: #b22222;">#   </span><span style="color: #b22222;">script appname summary body icon urgency</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">where urgency can be "LOW", "NORMAL" or "CRITICAL".</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">NOTE: It might be helpful to run dunst -print in a terminal in order</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">to find fitting options for rules.</span>
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Disable the transient hint so that idle_threshold cannot be bypassed from the</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">client</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">[transient_disable]</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">match_transient = yes</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">set_transient = no</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Make the handling of transient notifications more strict by making them not</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">be placed in history.</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">[transient_history_ignore]</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">match_transient = yes</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">history_ignore = yes</span>
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">fullscreen values</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">show: show the notifications, regardless if there is a fullscreen window opened</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">delay: displays the new notification, if there is no fullscreen window active</span>
+<span style="color: #b22222;">#        </span><span style="color: #b22222;">If the notification is already drawn, it won't get undrawn.</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">pushback: same as delay, but when switching into fullscreen, the notification will get</span>
+<span style="color: #b22222;">#           </span><span style="color: #b22222;">withdrawn from screen again and will get delayed like a new notification</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">[fullscreen_delay_everything]</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">fullscreen = delay</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">[fullscreen_show_critical]</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">msg_urgency = critical</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">fullscreen = show</span>
+
+<span style="color: #b22222;">#</span><span style="color: #b22222;">[espeak]</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">summary = "*"</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">script = dunst_espeak.sh</span>
+
+<span style="color: #b22222;">#</span><span style="color: #b22222;">[script-test]</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">summary = "*script*"</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">script = dunst_test.sh</span>
+
+<span style="color: #b22222;">#</span><span style="color: #b22222;">[ignore]</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;"># This notification will not be displayed</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">summary = "foobar"</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">skip_display = true</span>
+
+<span style="color: #b22222;">#</span><span style="color: #b22222;">[history-ignore]</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;"># This notification will not be saved in history</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">summary = "foobar"</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">history_ignore = yes</span>
+
+<span style="color: #b22222;">#</span><span style="color: #b22222;">[skip-display]</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;"># This notification will not be displayed, but will be included in the history</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">summary = "foobar"</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">skip_display = yes</span>
+
+<span style="color: #b22222;">#</span><span style="color: #b22222;">[signed_on]</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">appname = Pidgin</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">summary = "*signed on*"</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">urgency = low</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">[signed_off]</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">appname = Pidgin</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">summary = *signed off*</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">urgency = low</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">[says]</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">appname = Pidgin</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">summary = *says*</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">urgency = critical</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">[twitter]</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">appname = Pidgin</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">summary = *twitter.com*</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">urgency = normal</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">[stack-volumes]</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">appname = "some_volume_notifiers"</span>
+<span style="color: #b22222;">#    </span><span style="color: #b22222;">set_stack_tag = "volume"</span>
+<span style="color: #b22222;">#</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">vim: ft=cfg</span>
+
+</pre>
+</div>
+
+<p>
+This is the base configuration file, and each configuration in it will be replaced with the snippets in <code>~/.config/dunst/dunstrc.d/*.conf</code>.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2024-10-24 Thu 00:00</p>
+<p class="author">Author: Kristian Alexander P</p>
+<p class="date">Created: 2024-10-24 Thu 16:02</p>
+</div>
+</body>
+</html>
