@@ -12,6 +12,9 @@
 #+exclude_tags: noexport
 #+creator: Emacs 29.4 (Org mode 9.8-pre)
 #+cite_export:
+#+property: EXPORT_FILE_NAME: index.html
+#+startup: content indent
+#+setupfile: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 
 #+begin_html
 <a href="https://raw.githubusercontent.com/alexforsale/dotfiles-dunst/main/LICENSE.md">
