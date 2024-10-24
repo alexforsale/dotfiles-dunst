@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-10-24 Thu 16:10 -->
+<!-- 2024-10-24 Thu 16:38 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>index</title>
@@ -201,16 +201,16 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org5aef520">Configuration File</a></li>
+<li><a href="#org87e9fc9">Configuration File</a></li>
 </ul>
 </div>
 </div>
 <p>
 This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a></i> configuration files.
 </p>
-<div id="outline-container-org5aef520" class="outline-2">
-<h2 id="org5aef520">Configuration File</h2>
-<div class="outline-text-2" id="text-org5aef520">
+<div id="outline-container-org87e9fc9" class="outline-2">
+<h2 id="org87e9fc9">Configuration File</h2>
+<div class="outline-text-2" id="text-org87e9fc9">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">-*- eval: (rainbow-mode 1) -*-</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">See dunst(5) for all configuration options</span>
@@ -242,19 +242,19 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
     <span style="color: #b8860b;">width</span> = (0, 600)
 
     <span style="color: #b22222;"># </span><span style="color: #b22222;">The maximum height of a single notification, excluding the frame.</span>
-    <span style="color: #b8860b;">height</span> = 222
+    <span style="color: #b8860b;">height</span> = 200
 
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Position the notification in the top right corner</span>
     <span style="color: #b8860b;">origin</span> = top-right
 
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Offset from the origin</span>
-    <span style="color: #b8860b;">offset</span> = 25x50
+    <span style="color: #b8860b;">offset</span> = 10x10
 
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Scale factor. It is auto-detected if value is 0.</span>
     <span style="color: #b8860b;">scale</span> = 0
 
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Maximum number of notification (0 means no limit)</span>
-    <span style="color: #b8860b;">notification_limit</span> = 20
+    <span style="color: #b8860b;">notification_limit</span> = 5
 
     <span style="color: #b22222;">### </span><span style="color: #b22222;">Progress bar ###</span>
 
@@ -279,7 +279,7 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
     <span style="color: #b8860b;">progress_bar_corner_radius</span> = 0
 
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Corner radius for the icon image.</span>
-    <span style="color: #b8860b;">icon_corner_radius</span> = 0
+    <span style="color: #b8860b;">icon_corner_radius</span> = 8
 
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Show how many messages are currently hidden (because of</span>
     <span style="color: #b22222;"># </span><span style="color: #b22222;">notification_limit).</span>
@@ -288,13 +288,13 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
     <span style="color: #b22222;"># </span><span style="color: #b22222;">The transparency of the window.  Range: [0; 100].</span>
     <span style="color: #b22222;"># </span><span style="color: #b22222;">This option will only work if a compositing window manager is</span>
     <span style="color: #b22222;"># </span><span style="color: #b22222;">present (e.g. xcompmgr, compiz, etc.). (X11 only)</span>
-    <span style="color: #b8860b;">transparency</span> = 3
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">transparency = 3</span>
 
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Draw a line of "separator_height" pixel height between two</span>
     <span style="color: #b22222;"># </span><span style="color: #b22222;">notifications.</span>
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Set to 0 to disable.</span>
     <span style="color: #b22222;"># </span><span style="color: #b22222;">If gap_size is greater than 0, this setting will be ignored.</span>
-    <span style="color: #b8860b;">separator_height</span> = 2
+    <span style="color: #b8860b;">separator_height</span> = 0
 
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Padding between text and separator.</span>
     <span style="color: #b8860b;">padding</span> = 8
@@ -2280,7 +2280,7 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Alignment of message text.</span>
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Possible values are "left", "center" and "right".</span>
-    <span style="color: #b8860b;">alignment</span> = left
+    <span style="color: #b8860b;">alignment</span> = center
 
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Vertical alignment of message text and icon.</span>
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Possible values are "top", "center" and "bottom".</span>
@@ -2316,7 +2316,7 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Set icon theme (only used for recursive icon lookup)</span>
     <span style="color: #b8860b;">icon_theme</span> = Papirus
     <span style="color: #b22222;"># </span><span style="color: #b22222;">You can also set multiple icon themes, with the leftmost one being used first.</span>
-    <span style="color: #b8860b;">icon_theme</span> = <span style="color: #bc8f8f;">"Adwaita, breeze"</span>
+    <span style="color: #b8860b;">icon_theme</span> = <span style="color: #bc8f8f;">"breeze, Adwaita"</span>
 
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Align icons left/right/top/off</span>
     <span style="color: #b8860b;">icon_position</span> = left
@@ -2327,7 +2327,7 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
     <span style="color: #b8860b;">min_icon_size</span> = 32
 
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Scale larger icons down to this size, set to 0 to disable</span>
-    <span style="color: #b8860b;">max_icon_size</span> = 128
+    <span style="color: #b8860b;">max_icon_size</span> = 64
 
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Paths to default icons (only neccesary when not using recursive icon lookup)</span>
     <span style="color: #b22222;"># </span><span style="color: #b22222;">icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/</span>
@@ -2364,7 +2364,7 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
     <span style="color: #b22222;"># </span><span style="color: #b22222;">corners.</span>
     <span style="color: #b22222;"># </span><span style="color: #b22222;">The radius will be automatically lowered if it exceeds half of the</span>
     <span style="color: #b22222;"># </span><span style="color: #b22222;">notification height to avoid clipping text and/or icons.</span>
-    <span style="color: #b8860b;">corner_radius</span> = 8
+    <span style="color: #b8860b;">corner_radius</span> = 10
 
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Ignore the dbus closeNotification message.</span>
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Useful to enforce the timeout set by dunst configuration. Without this</span>
@@ -2574,7 +2574,7 @@ This is the base configuration file, and each configuration in it will be replac
 <div id="postamble" class="status">
 <p class="date">Date: 2024-10-24 Thu 00:00</p>
 <p class="author">Author: Kristian Alexander P</p>
-<p class="date">Created: 2024-10-24 Thu 16:10</p>
+<p class="date">Created: 2024-10-24 Thu 16:38</p>
 </div>
 </body>
 </html>
