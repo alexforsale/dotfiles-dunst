@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-10-24 Thu 16:39 -->
+<!-- 2024-10-25 Fri 05:51 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>index</title>
@@ -25,16 +25,30 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgb001501">Configuration File</a></li>
+<li><a href="#orge96884c">Configuration File</a>
+<ul>
+<li><a href="#orgf5b7de6">dunstrc</a></li>
+</ul>
+</li>
+<li><a href="#org04f73c1">Scripts</a>
+<ul>
+<li><a href="#orga3ee1ae">dunst-backlight</a></li>
+<li><a href="#orgd958084">dunst-volume</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 <p>
 This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a></i> configuration files.
 </p>
-<div id="outline-container-orgb001501" class="outline-2">
-<h2 id="orgb001501">Configuration File</h2>
-<div class="outline-text-2" id="text-orgb001501">
+<div id="outline-container-orge96884c" class="outline-2">
+<h2 id="orge96884c">Configuration File</h2>
+<div class="outline-text-2" id="text-orge96884c">
+</div>
+<div id="outline-container-orgf5b7de6" class="outline-3">
+<h3 id="orgf5b7de6">dunstrc</h3>
+<div class="outline-text-3" id="text-orgf5b7de6">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">-*- eval: (rainbow-mode 1) -*-</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">See dunst(5) for all configuration options</span>
@@ -2395,10 +2409,97 @@ This is the base configuration file, and each configuration in it will be replac
 </div>
 </div>
 </div>
+<div id="outline-container-org04f73c1" class="outline-2">
+<h2 id="org04f73c1">Scripts</h2>
+<div class="outline-text-2" id="text-org04f73c1">
+</div>
+<div id="outline-container-orga3ee1ae" class="outline-3">
+<h3 id="orga3ee1ae">dunst-backlight</h3>
+<div class="outline-text-3" id="text-orga3ee1ae">
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #b22222;"># </span><span style="color: #b22222;">original script from https://wiki.archlinux.org/index.php/Dunst</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;"><a href="mailto:alexforsale%40yahoo.com">&lt;alexforsale@yahoo.com&gt;</a></span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">changeBrightness</span>
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Arbitrary but unique message tag</span>
+<span style="color: #b8860b;">msgTag</span>=<span style="color: #bc8f8f;">"mybrightness"</span>
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Change the volume using alsa(might differ if you use pulseaudio)</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">amixer -c 0 set Master "$@" &gt; /dev/null</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">pamixer --set-volume "${@}" &gt; /dev/null</span>
+brightnessctl set <span style="color: #bc8f8f;">"${@}"</span> &gt; /dev/null
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Query amixer for the current volume and whether or not the speaker is muted</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">volume="$(amixer -c 0 get Master | tail -1 | awk '{print $4}' | sed 's/[^0-9]*//g')"</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">mute="$(amixer -c 0 get Master | tail -1 | awk '{print $6}' | sed 's/[^a-z]*//g')"</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">volume="$(pamixer --get-volume-human)"</span>
+<span style="color: #b22222;">#</span><span style="color: #b22222;">mute="$(pamixer --get-mute)"</span>
+<span style="color: #b8860b;">max</span>=<span style="color: #bc8f8f;">"$(brightnessctl max)"</span>
+<span style="color: #b8860b;">current</span>=<span style="color: #bc8f8f;">"$(brightnessctl get)"</span>
+<span style="color: #b8860b;">percentage</span>=<span style="color: #bc8f8f;">"$(awk -v current=${current} -v max=${max} 'BEGIN { print ( (current / max) * 100 )}')"</span>
+<span style="color: #b8860b;">percentage</span>=<span style="color: #bc8f8f;">"${percentage%.*}"</span>
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Show the brightness notification</span>
+dunstify -a <span style="color: #bc8f8f;">"changeBrightness"</span> -u low -i audio-volume-high -h string:x-dunst-stack-tag:$<span style="color: #b8860b;">msgTag</span> <span style="color: #bc8f8f;">\</span>
+    -h int:value:<span style="color: #bc8f8f;">"${percentage}"</span> <span style="color: #bc8f8f;">"&#58331; Brightness: ${percentage}%"</span>
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Play the brightness changed sound</span>
+canberra-gtk-play -i audio-volume-change -d <span style="color: #bc8f8f;">"changeVolume"</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd958084" class="outline-3">
+<h3 id="orgd958084">dunst-volume</h3>
+<div class="outline-text-3" id="text-orgd958084">
+<div class="org-src-container">
+<pre class="src src-sh"><span style="color: #b22222;"># </span><span style="color: #b22222;">original script from https://wiki.archlinux.org/index.php/Dunst</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;"><a href="mailto:alexforsale%40yahoo.com">&lt;alexforsale@yahoo.com&gt;</a></span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">changeVolume</span>
+
+<span style="color: #b8860b;">msgTag</span>=<span style="color: #bc8f8f;">"myvolume"</span>
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">args = -i % or -d %</span>
+pamixer <span style="color: #bc8f8f;">"${@}"</span> &gt; /dev/null
+<span style="color: #b8860b;">volume</span>=<span style="color: #bc8f8f;">"$(pamixer --get-volume)"</span>
+<span style="color: #b8860b;">mute</span>=<span style="color: #bc8f8f;">"$(pamixer --get-mute)"</span>
+<span style="color: #4169e1;">if</span> [ <span style="color: #bc8f8f;">"${mute}"</span> == <span style="color: #bc8f8f;">"true"</span> ]; <span style="color: #4169e1;">then</span>
+    <span style="color: #b8860b;">icon</span>=<span style="color: #bc8f8f;">"audio-volume-muted"</span>
+    <span style="color: #b8860b;">symbol</span>=<span style="color: #bc8f8f;">"&#62566;"</span>
+<span style="color: #4169e1;">elif</span> [ <span style="color: #bc8f8f;">"${mute}"</span> == <span style="color: #bc8f8f;">"false"</span> ] &amp;&amp;
+         [ <span style="color: #bc8f8f;">"${volume}"</span> -gt 0 ] &amp;&amp;
+         [ <span style="color: #bc8f8f;">"${volume}"</span> -le 25 ]; <span style="color: #4169e1;">then</span>
+    <span style="color: #b8860b;">icon</span>=<span style="color: #bc8f8f;">"audio-volume-low"</span>
+    <span style="color: #b8860b;">symbol</span>=<span style="color: #bc8f8f;">"&#61478;"</span>
+<span style="color: #4169e1;">elif</span> [ <span style="color: #bc8f8f;">"${mute}"</span> == <span style="color: #bc8f8f;">"false"</span> ] &amp;&amp;
+         [ <span style="color: #bc8f8f;">"${volume}"</span> -gt 25 ] &amp;&amp;
+         [ <span style="color: #bc8f8f;">"${volume}"</span> -le 75 ]; <span style="color: #4169e1;">then</span>
+    <span style="color: #b8860b;">icon</span>=<span style="color: #bc8f8f;">"audio-volume-medium"</span>
+    <span style="color: #b8860b;">symbol</span>=<span style="color: #bc8f8f;">"&#61479;"</span>
+<span style="color: #4169e1;">elif</span> [ <span style="color: #bc8f8f;">"${mute}"</span> == <span style="color: #bc8f8f;">"false"</span> ] &amp;&amp;
+         [ <span style="color: #bc8f8f;">"${volume}"</span> -gt 75 ]; <span style="color: #4169e1;">then</span>
+    <span style="color: #b8860b;">icon</span>=<span style="color: #bc8f8f;">"audio-volume-high"</span>
+    <span style="color: #b8860b;">symbol</span>=<span style="color: #bc8f8f;">"&#61480;"</span>
+<span style="color: #4169e1;">fi</span>
+
+<span style="color: #4169e1;">if</span> [[ $<span style="color: #b8860b;">volume</span> == 0 || <span style="color: #bc8f8f;">"$mute"</span> == <span style="color: #bc8f8f;">"true"</span> ]]; <span style="color: #4169e1;">then</span>
+    dunstify -a <span style="color: #bc8f8f;">"changeVolume"</span> -u low -i <span style="color: #bc8f8f;">"${icon}"</span> -h string:x-dunst-stack-tag:$<span style="color: #b8860b;">msgTag</span> <span style="color: #bc8f8f;">"${symbol} Volume muted"</span>
+<span style="color: #4169e1;">else</span>
+    dunstify -a <span style="color: #bc8f8f;">"changeVolume"</span> -u low -i <span style="color: #bc8f8f;">"${icon}"</span> -h string:x-dunst-stack-tag:$<span style="color: #b8860b;">msgTag</span> <span style="color: #bc8f8f;">\</span>
+    -h int:value:<span style="color: #bc8f8f;">"$volume"</span> <span style="color: #bc8f8f;">"${symbol} Volume: ${volume}%"</span>
+<span style="color: #4169e1;">fi</span>
+
+canberra-gtk-play -i audio-volume-change -d <span style="color: #bc8f8f;">"changeVolume"</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div id="postamble" class="status">
 <p class="date">Date: 2024-10-24 Thu 00:00</p>
 <p class="author">Author: Kristian Alexander P</p>
-<p class="date">Created: 2024-10-24 Thu 16:39</p>
+<p class="date">Created: 2024-10-25 Fri 05:51</p>
 </div>
 </body>
 </html>
