@@ -18,6 +18,7 @@
 
 This is my personal /[[https://github.com/dunst-project/dunst][dunst]]/ configuration files.
 * Configuration File
+** dunstrc
 :PROPERTIES:
 :header-args: :tangle .config/dunst/dunstrc :mkdirp t
 :END:
@@ -477,3 +478,83 @@ This is my personal /[[https://github.com/dunst-project/dunst][dunst]]/ configur
 #+end_src
 
 This is the base configuration file, and each configuration in it will be replaced with the snippets in =~/.config/dunst/dunstrc.d/*.conf=.
+* Scripts
+** dunst-backlight
+:PROPERTIES:
+:header-args: :tangle .local/bin/dunst-backlight :shebang #!/usr/bin/env bash :mkdirp t
+:END:
+
+#+begin_src sh
+  # original script from https://wiki.archlinux.org/index.php/Dunst
+  # <alexforsale@yahoo.com>
+  # changeBrightness
+
+  # Arbitrary but unique message tag
+  msgTag="mybrightness"
+
+  # Change the volume using alsa(might differ if you use pulseaudio)
+  #amixer -c 0 set Master "$@" > /dev/null
+  #pamixer --set-volume "${@}" > /dev/null
+  brightnessctl set "${@}" > /dev/null
+
+  # Query amixer for the current volume and whether or not the speaker is muted
+  #volume="$(amixer -c 0 get Master | tail -1 | awk '{print $4}' | sed 's/[^0-9]*//g')"
+  #mute="$(amixer -c 0 get Master | tail -1 | awk '{print $6}' | sed 's/[^a-z]*//g')"
+  #volume="$(pamixer --get-volume-human)"
+  #mute="$(pamixer --get-mute)"
+  max="$(brightnessctl max)"
+  current="$(brightnessctl get)"
+  percentage="$(awk -v current=${current} -v max=${max} 'BEGIN { print ( (current / max) * 100 )}')"
+  percentage="${percentage%.*}"
+
+  # Show the brightness notification
+  dunstify -a "changeBrightness" -u low -i audio-volume-high -h string:x-dunst-stack-tag:$msgTag \
+      -h int:value:"${percentage}" " Brightness: ${percentage}%"
+
+  # Play the brightness changed sound
+  canberra-gtk-play -i audio-volume-change -d "changeVolume"
+#+end_src
+** dunst-volume
+:PROPERTIES:
+:header-args: :tangle .local/bin/dunst-volume :shebang #!/usr/bin/env bash :mkdirp t
+:END:
+
+#+begin_src sh
+  # original script from https://wiki.archlinux.org/index.php/Dunst
+  # <alexforsale@yahoo.com>
+  # changeVolume
+
+  msgTag="myvolume"
+
+  # args = -i % or -d %
+  pamixer "${@}" > /dev/null
+  volume="$(pamixer --get-volume)"
+  mute="$(pamixer --get-mute)"
+  if [ "${mute}" == "true" ]; then
+      icon="audio-volume-muted"
+      symbol=""
+  elif [ "${mute}" == "false" ] &&
+           [ "${volume}" -gt 0 ] &&
+           [ "${volume}" -le 25 ]; then
+      icon="audio-volume-low"
+      symbol=""
+  elif [ "${mute}" == "false" ] &&
+           [ "${volume}" -gt 25 ] &&
+           [ "${volume}" -le 75 ]; then
+      icon="audio-volume-medium"
+      symbol=""
+  elif [ "${mute}" == "false" ] &&
+           [ "${volume}" -gt 75 ]; then
+      icon="audio-volume-high"
+      symbol=""
+  fi
+
+  if [[ $volume == 0 || "$mute" == "true" ]]; then
+      dunstify -a "changeVolume" -u low -i "${icon}" -h string:x-dunst-stack-tag:$msgTag "${symbol} Volume muted"
+  else
+      dunstify -a "changeVolume" -u low -i "${icon}" -h string:x-dunst-stack-tag:$msgTag \
+      -h int:value:"$volume" "${symbol} Volume: ${volume}%"
+  fi
+
+  canberra-gtk-play -i audio-volume-change -d "changeVolume"
+#+end_src
