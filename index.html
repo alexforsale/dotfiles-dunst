@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-10-25 Fri 05:51 -->
+<!-- 2024-12-12 Thu 17:21 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>index</title>
@@ -25,15 +25,15 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orge96884c">Configuration File</a>
+<li><a href="#orgb72d170">Configuration File</a>
 <ul>
-<li><a href="#orgf5b7de6">dunstrc</a></li>
+<li><a href="#org10f01d6">dunstrc</a></li>
 </ul>
 </li>
-<li><a href="#org04f73c1">Scripts</a>
+<li><a href="#orgd0ec3f0">Scripts</a>
 <ul>
-<li><a href="#orga3ee1ae">dunst-backlight</a></li>
-<li><a href="#orgd958084">dunst-volume</a></li>
+<li><a href="#org11cb599">dunst-backlight</a></li>
+<li><a href="#orgd544843">dunst-volume</a></li>
 </ul>
 </li>
 </ul>
@@ -42,13 +42,13 @@
 <p>
 This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a></i> configuration files.
 </p>
-<div id="outline-container-orge96884c" class="outline-2">
-<h2 id="orge96884c">Configuration File</h2>
-<div class="outline-text-2" id="text-orge96884c">
+<div id="outline-container-orgb72d170" class="outline-2">
+<h2 id="orgb72d170">Configuration File</h2>
+<div class="outline-text-2" id="text-orgb72d170">
 </div>
-<div id="outline-container-orgf5b7de6" class="outline-3">
-<h3 id="orgf5b7de6">dunstrc</h3>
-<div class="outline-text-3" id="text-orgf5b7de6">
+<div id="outline-container-org10f01d6" class="outline-3">
+<h3 id="org10f01d6">dunstrc</h3>
+<div class="outline-text-3" id="text-org10f01d6">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">-*- eval: (rainbow-mode 1) -*-</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">See dunst(5) for all configuration options</span>
@@ -77,10 +77,10 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
     <span style="color: #b22222;"># </span><span style="color: #b22222;">dynamic width from 0 to 300</span>
     <span style="color: #b22222;"># </span><span style="color: #b22222;">width = (0, 300)</span>
     <span style="color: #b22222;"># </span><span style="color: #b22222;">constant width of 300</span>
-    <span style="color: #b8860b;">width</span> = (0, 600)
+    <span style="color: #b8860b;">width</span> = (0, 300)
 
     <span style="color: #b22222;"># </span><span style="color: #b22222;">The maximum height of a single notification, excluding the frame.</span>
-    <span style="color: #b8860b;">height</span> = 200
+    <span style="color: #b8860b;">height</span> = (0, 200)
 
     <span style="color: #b22222;"># </span><span style="color: #b22222;">Position the notification in the top right corner</span>
     <span style="color: #b8860b;">origin</span> = top-right
@@ -2409,13 +2409,13 @@ This is the base configuration file, and each configuration in it will be replac
 </div>
 </div>
 </div>
-<div id="outline-container-org04f73c1" class="outline-2">
-<h2 id="org04f73c1">Scripts</h2>
-<div class="outline-text-2" id="text-org04f73c1">
+<div id="outline-container-orgd0ec3f0" class="outline-2">
+<h2 id="orgd0ec3f0">Scripts</h2>
+<div class="outline-text-2" id="text-orgd0ec3f0">
 </div>
-<div id="outline-container-orga3ee1ae" class="outline-3">
-<h3 id="orga3ee1ae">dunst-backlight</h3>
-<div class="outline-text-3" id="text-orga3ee1ae">
+<div id="outline-container-org11cb599" class="outline-3">
+<h3 id="org11cb599">dunst-backlight</h3>
+<div class="outline-text-3" id="text-org11cb599">
 <div class="org-src-container">
 <pre class="src src-sh"><span style="color: #b22222;"># </span><span style="color: #b22222;">original script from https://wiki.archlinux.org/index.php/Dunst</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;"><a href="mailto:alexforsale%40yahoo.com">&lt;alexforsale@yahoo.com&gt;</a></span>
@@ -2449,9 +2449,9 @@ canberra-gtk-play -i audio-volume-change -d <span style="color: #bc8f8f;">"chang
 </div>
 </div>
 </div>
-<div id="outline-container-orgd958084" class="outline-3">
-<h3 id="orgd958084">dunst-volume</h3>
-<div class="outline-text-3" id="text-orgd958084">
+<div id="outline-container-orgd544843" class="outline-3">
+<h3 id="orgd544843">dunst-volume</h3>
+<div class="outline-text-3" id="text-orgd544843">
 <div class="org-src-container">
 <pre class="src src-sh"><span style="color: #b22222;"># </span><span style="color: #b22222;">original script from https://wiki.archlinux.org/index.php/Dunst</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;"><a href="mailto:alexforsale%40yahoo.com">&lt;alexforsale@yahoo.com&gt;</a></span>
@@ -2499,7 +2499,7 @@ canberra-gtk-play -i audio-volume-change -d <span style="color: #bc8f8f;">"chang
 <div id="postamble" class="status">
 <p class="date">Date: 2024-10-24 Thu 00:00</p>
 <p class="author">Author: Kristian Alexander P</p>
-<p class="date">Created: 2024-10-25 Fri 05:51</p>
+<p class="date">Created: 2024-12-12 Thu 17:21</p>
 </div>
 </body>
 </html>
