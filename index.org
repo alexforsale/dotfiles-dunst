@@ -407,26 +407,31 @@ This is my personal /[[https://github.com/dunst-project/dunst][dunst]]/ configur
 **** Urgency
 #+begin_src conf
   [urgency_low]
-  msg_urgency = low
-  background = "#3b4252"
-  foreground = "#4c566a"
-  # Icon for notifications with normal urgency
-  default_icon = dialog-information
+    background = "#3b4252"
+    foreground = "#4c566a"
+    # Icon for notifications with normal urgency
+    default_icon = dialog-information
 
   [urgency_normal]
-  msg_urgency = normal
-  background = "#434c5e"
-  foreground = "#e5e9f0"
-  override_pause_level = 30
-  # Icon for notifications with normal urgency
-  default_icon = dialog-information
+    background = "#434c5e"
+    foreground = "#e5e9f0"
+    override_pause_level = 30
+    # Icon for notifications with normal urgency
+    default_icon = dialog-information
 
   [urgency_critical]
-  msg_urgency = critical
-  background = "#bf616a"
-  foreground = "#eceff4"
-  # Icon for notifications with critical urgency
-  default_icon = dialog-warning
+    background = "#bf616a"
+    foreground = "#eceff4"
+    # Icon for notifications with critical urgency
+    default_icon = dialog-warning
+#+end_src
+**** Ignore transient in history
+#+begin_src conf
+  [transient_history_ignore]
+    match_transient = yes
+    history_ignore = yes
+#+end_src
+#+begin_src conf
 
   # Every section that isn't one of the above is interpreted as a rules to
   # override settings for certain messages.
