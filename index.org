@@ -285,7 +285,7 @@ This is my personal /[[https://github.com/dunst-project/dunst][dunst]]/ configur
   # Set icon theme (only used for recursive icon lookup)
   icon_theme = Papirus
   # You can also set multiple icon themes, with the leftmost one being used first.
-  icon_theme = "breeze, Adwaita"
+  icon_theme = "breeze-dark, Papirus-Dark"
 
   # Align icons left/right/top/off
   icon_position = left
