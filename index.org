@@ -231,7 +231,7 @@ This is my personal /[[https://github.com/dunst-project/dunst][dunst]]/ configur
   #   %n  progress value if set without any extra characters
   #   %%  Literal %
   # Markup is allowed
-  format = "<span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#2aa198'>%s</span>\n<span foreground='#f9f9f9'>%b</span>"
+  format = "<span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#2aa198'>%s</span>\n<span foreground='#f9f9f9'>%b</span>\n<span foreground='#eee8d5'>%p</span>\n\n<span foreground='#859900'>%a</span>"
 #+end_src
 **** Alignments
 #+begin_src conf
