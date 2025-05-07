@@ -19,6 +19,7 @@
 #+HTML_HEAD: <style> li{max-width:800px;}</style>
 
 This is my personal /[[https://github.com/dunst-project/dunst][dunst]]/ configuration files.
+[[./assets/img/dunst-2025-05-07_12-40.png]]
 * Configuration File
 ** dunstrc
 :PROPERTIES:
