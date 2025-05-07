@@ -177,13 +177,11 @@ Don't remove messages, if the user is idle (no mouse or keyboard input) for long
 **** Markup
 Possible values are:
 - =full= :: Allow a small subset of /html/ markup in notifications:
-=<b>bold</b>=
-=<i>italic</i>=
-=<s>strikethrough</s>=
-=<u>underline</u>=
-
-       For a complete reference see
-       <https://docs.gtk.org/Pango/pango_markup.html>.
+  - =<b>bold</b>=
+  - =<i>italic</i>=
+  - =<s>strikethrough</s>=
+  - =<u>underline</u>=
+For a complete reference see <https://docs.gtk.org/Pango/pango_markup.html>.
 - =strip= :: This setting is provided for compatibility with some broken clients that send markup even though it's not enabled on the server. Dunst will try to strip the markup but the parsing is simplistic so using this option outside of matching rules for specific applications *IS GREATLY DISCOURAGED*.
 - =no= :: Disable markup parsing, incoming notifications will be treated as plain text. Dunst will not advertise that it has the body-markup capability if this is set as a global setting.
 
