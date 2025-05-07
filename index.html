@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-05-05 Mon 14:47 -->
+<!-- 2025-05-07 Wed 04:52 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Dunstrc</title>
@@ -28,19 +28,19 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org74102ac">Configuration File</a>
+<li><a href="#orgb954c64">Configuration File</a>
 <ul>
-<li><a href="#org4eb2aa0">dunstrc</a>
+<li><a href="#org3b44813">dunstrc</a>
 <ul>
-<li><a href="#orgb7ccfed">Global Section</a></li>
+<li><a href="#org7ea3156">Global Section</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org746c744">Scripts</a>
+<li><a href="#org772436a">Scripts</a>
 <ul>
-<li><a href="#orgb6b3bef">dunst-backlight</a></li>
-<li><a href="#org39330b4">dunst-volume</a></li>
+<li><a href="#org211ae9a">dunst-backlight</a></li>
+<li><a href="#orga33efa9">dunst-volume</a></li>
 </ul>
 </li>
 </ul>
@@ -49,21 +49,21 @@
 <p>
 This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a></i> configuration files.
 </p>
-<div id="outline-container-org74102ac" class="outline-2">
-<h2 id="org74102ac">Configuration File</h2>
-<div class="outline-text-2" id="text-org74102ac">
+<div id="outline-container-orgb954c64" class="outline-2">
+<h2 id="orgb954c64">Configuration File</h2>
+<div class="outline-text-2" id="text-orgb954c64">
 </div>
-<div id="outline-container-org4eb2aa0" class="outline-3">
-<h3 id="org4eb2aa0">dunstrc</h3>
-<div class="outline-text-3" id="text-org4eb2aa0">
+<div id="outline-container-org3b44813" class="outline-3">
+<h3 id="org3b44813">dunstrc</h3>
+<div class="outline-text-3" id="text-org3b44813">
 </div>
-<div id="outline-container-orgb7ccfed" class="outline-4">
-<h4 id="orgb7ccfed">Global Section</h4>
-<div class="outline-text-4" id="text-orgb7ccfed">
+<div id="outline-container-org7ea3156" class="outline-4">
+<h4 id="org7ea3156">Global Section</h4>
+<div class="outline-text-4" id="text-org7ea3156">
 </div>
 <ul class="org-ul">
-<li><a id="org9e27b57"></a>Monitor<br />
-<div class="outline-text-5" id="text-org9e27b57">
+<li><a id="org8e0c835"></a>Monitor<br />
+<div class="outline-text-5" id="text-org8e0c835">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">-*- eval: (rainbow-mode 1) -*-</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">See dunst(5) for all configuration options</span>
@@ -77,8 +77,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="org56cbd58"></a>Display notification on focused monitors.<br />
-<div class="outline-text-5" id="text-org56cbd58">
+<li><a id="org3d4da12"></a>Display notification on focused monitors.<br />
+<div class="outline-text-5" id="text-org3d4da12">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Display notification on focused monitor.  Possible modes are:</span>
 <span style="color: #b22222;">#   </span><span style="color: #b22222;">mouse: follow mouse pointer</span>
@@ -96,8 +96,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="org786be16"></a>Geometry<br />
-<div class="outline-text-5" id="text-org786be16">
+<li><a id="org0f2e283"></a>Geometry<br />
+<div class="outline-text-5" id="text-org0f2e283">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;">### </span><span style="color: #b22222;">Geometry ###</span>
 
@@ -121,8 +121,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="orgbbad7ad"></a>Maximum number of notification<br />
-<div class="outline-text-5" id="text-orgbbad7ad">
+<li><a id="orga2bdeef"></a>Maximum number of notification<br />
+<div class="outline-text-5" id="text-orga2bdeef">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Maximum number of notification (0 means no limit)</span>
 <span style="color: #b8860b;">notification_limit</span> = 5
@@ -130,8 +130,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="orga2224e9"></a>Progress bar<br />
-<div class="outline-text-5" id="text-orga2224e9">
+<li><a id="orga23ac3b"></a>Progress bar<br />
+<div class="outline-text-5" id="text-orga23ac3b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;">### </span><span style="color: #b22222;">Progress bar ###</span>
 
@@ -165,8 +165,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="orgdda42b0"></a>Indicate hidden<br />
-<div class="outline-text-5" id="text-orgdda42b0">
+<li><a id="org32590d8"></a>Indicate hidden<br />
+<div class="outline-text-5" id="text-org32590d8">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Show how many messages are currently hidden (because of</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">notification_limit).</span>
@@ -175,8 +175,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="org27abb43"></a>Transparency<br />
-<div class="outline-text-5" id="text-org27abb43">
+<li><a id="org1c82ba1"></a>Transparency<br />
+<div class="outline-text-5" id="text-org1c82ba1">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">The transparency of the window.  Range: [0; 100].</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">This option will only work if a compositing window manager is</span>
@@ -186,8 +186,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="orgfffce75"></a>Separator height<br />
-<div class="outline-text-5" id="text-orgfffce75">
+<li><a id="org06316f0"></a>Separator height<br />
+<div class="outline-text-5" id="text-org06316f0">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Draw a line of "separator_height" pixel height between two</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">notifications.</span>
@@ -198,8 +198,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="orgea383f3"></a>Padding<br />
-<div class="outline-text-5" id="text-orgea383f3">
+<li><a id="org84461be"></a>Padding<br />
+<div class="outline-text-5" id="text-org84461be">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Padding between text and separator.</span>
 <span style="color: #b8860b;">padding</span> = 8
@@ -213,8 +213,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="org50e02f0"></a>Frame width and color<br />
-<div class="outline-text-5" id="text-org50e02f0">
+<li><a id="org50e875d"></a>Frame width and color<br />
+<div class="outline-text-5" id="text-org50e875d">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Defines width in pixels of frame around the notification window.</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">Set to 0 to disable.</span>
@@ -226,8 +226,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="org370da46"></a>Gap size<br />
-<div class="outline-text-5" id="text-org370da46">
+<li><a id="org8ce6695"></a>Gap size<br />
+<div class="outline-text-5" id="text-org8ce6695">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Size of gap to display between notifications - requires a compositor.</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">If value is greater than 0, separator_height will be ignored and a border</span>
@@ -238,8 +238,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="org2017439"></a>Separator color<br />
-<div class="outline-text-5" id="text-org2017439">
+<li><a id="org2724529"></a>Separator color<br />
+<div class="outline-text-5" id="text-org2724529">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Define a color for the separator.</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">possible values are:</span>
@@ -252,8 +252,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="org6657fea"></a>Sort message by urgency<br />
-<div class="outline-text-5" id="text-org6657fea">
+<li><a id="org86afc13"></a>Sort message by urgency<br />
+<div class="outline-text-5" id="text-org86afc13">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Sort messages by urgency.</span>
 <span style="color: #b8860b;">sort</span> = yes
@@ -261,8 +261,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="orga9eca03"></a>Idle threshold<br />
-<div class="outline-text-5" id="text-orga9eca03">
+<li><a id="org6e613a3"></a>Idle threshold<br />
+<div class="outline-text-5" id="text-org6e613a3">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Don't remove messages, if the user is idle (no mouse or keyboard input)</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">for longer than idle_threshold seconds.</span>
@@ -274,8 +274,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="orgf0fb2db"></a>Font<br />
-<div class="outline-text-5" id="text-orgf0fb2db">
+<li><a id="orgace61c8"></a>Font<br />
+<div class="outline-text-5" id="text-orgace61c8">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;">### </span><span style="color: #b22222;">Text ###</span>
 
@@ -284,8 +284,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="orge078a49"></a>Line height<br />
-<div class="outline-text-5" id="text-orge078a49">
+<li><a id="org2c9ec97"></a>Line height<br />
+<div class="outline-text-5" id="text-org2c9ec97">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">The spacing between lines.  If the height is smaller than the</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">font height, it will get raised to the font height.</span>
@@ -294,8 +294,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="org3549e19"></a>Markup<br />
-<div class="outline-text-5" id="text-org3549e19">
+<li><a id="orged7e42f"></a>Markup<br />
+<div class="outline-text-5" id="text-orged7e42f">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Possible values are:</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">full: Allow a small subset of html markup in notifications:</span>
@@ -324,8 +324,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="orgdd426f5"></a>Message format<br />
-<div class="outline-text-5" id="text-orgdd426f5">
+<li><a id="org301677c"></a>Message format<br />
+<div class="outline-text-5" id="text-org301677c">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">The format of the message.  Possible variables are:</span>
 <span style="color: #b22222;">#   </span><span style="color: #b22222;">%a  appname</span>
@@ -337,13 +337,13 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 <span style="color: #b22222;">#   </span><span style="color: #b22222;">%n  progress value if set without any extra characters</span>
 <span style="color: #b22222;">#   </span><span style="color: #b22222;">%%  Literal %</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">Markup is allowed</span>
-<span style="color: #b8860b;">format</span> = <span style="color: #bc8f8f;">"&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#2aa198'&gt;%s&lt;/span&gt;\n&lt;span foreground='#f9f9f9'&gt;%b&lt;/span&gt;"</span>
+<span style="color: #b8860b;">format</span> = <span style="color: #bc8f8f;">"&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#2aa198'&gt;%s&lt;/span&gt;\n&lt;span foreground='#f9f9f9'&gt;%b&lt;/span&gt;\n&lt;span foreground='#eee8d5'&gt;%p&lt;/span&gt;\n\n&lt;span foreground='#859900'&gt;%a&lt;/span&gt;"</span>
 </pre>
 </div>
 </div>
 </li>
-<li><a id="org3267217"></a>Alignments<br />
-<div class="outline-text-5" id="text-org3267217">
+<li><a id="org4ac0084"></a>Alignments<br />
+<div class="outline-text-5" id="text-org4ac0084">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Alignment of message text.</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">Possible values are "left", "center" and "right".</span>
@@ -356,8 +356,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="org22d571c"></a>Age threshold<br />
-<div class="outline-text-5" id="text-org22d571c">
+<li><a id="org367ce22"></a>Age threshold<br />
+<div class="outline-text-5" id="text-org367ce22">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Show age of message if message is older than show_age_threshold</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">seconds.</span>
@@ -367,8 +367,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="org934c17a"></a>Ellipsize<br />
-<div class="outline-text-5" id="text-org934c17a">
+<li><a id="org91b524e"></a>Ellipsize<br />
+<div class="outline-text-5" id="text-org91b524e">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Specify where to make an ellipsis in long lines.</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">Possible values are "start", "middle" and "end".</span>
@@ -377,8 +377,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="orgfb2d221"></a>Ignore newline<br />
-<div class="outline-text-5" id="text-orgfb2d221">
+<li><a id="org0474803"></a>Ignore newline<br />
+<div class="outline-text-5" id="text-org0474803">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Ignore newlines '\n' in notifications.</span>
 <span style="color: #b8860b;">ignore_newline</span> = no
@@ -386,8 +386,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="orgb52eec1"></a>Duplicates<br />
-<div class="outline-text-5" id="text-orgb52eec1">
+<li><a id="orgfc0543b"></a>Duplicates<br />
+<div class="outline-text-5" id="text-orgfc0543b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Stack together notifications with the same content</span>
 <span style="color: #b8860b;">stack_duplicates</span> = true
@@ -398,8 +398,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="org38f09a7"></a>URL and action indicator<br />
-<div class="outline-text-5" id="text-org38f09a7">
+<li><a id="org8e74827"></a>URL and action indicator<br />
+<div class="outline-text-5" id="text-org8e74827">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Display indicators for URLs (U) and actions (A).</span>
 <span style="color: #b8860b;">show_indicators</span> = yes
@@ -407,8 +407,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="org57b3ce8"></a>Icons<br />
-<div class="outline-text-5" id="text-org57b3ce8">
+<li><a id="orge347dd7"></a>Icons<br />
+<div class="outline-text-5" id="text-orge347dd7">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;">### </span><span style="color: #b22222;">Icons ###</span>
 
@@ -438,8 +438,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="org5d34794"></a>History<br />
-<div class="outline-text-5" id="text-org5d34794">
+<li><a id="orgfe3a3c6"></a>History<br />
+<div class="outline-text-5" id="text-orgfe3a3c6">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;">### </span><span style="color: #b22222;">History ###</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">Should a notification popped up from history be sticky or timeout</span>
@@ -452,8 +452,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="orgc707660"></a>Misc<br />
-<div class="outline-text-5" id="text-orgc707660">
+<li><a id="orgf5f301e"></a>Misc<br />
+<div class="outline-text-5" id="text-orgf5f301e">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;">### </span><span style="color: #b22222;">Misc/Advanced ###</span>
 
@@ -537,8 +537,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="org6c277d3"></a>experimental<br />
-<div class="outline-text-5" id="text-org6c277d3">
+<li><a id="org2e9e843"></a>experimental<br />
+<div class="outline-text-5" id="text-org2e9e843">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Experimental features that may or may not work correctly. Do not expect them</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">to have a consistent behaviour across releases.</span>
@@ -553,8 +553,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="org9b048d0"></a>Urgency<br />
-<div class="outline-text-5" id="text-org9b048d0">
+<li><a id="org65ddd39"></a>Urgency<br />
+<div class="outline-text-5" id="text-org65ddd39">
 <div class="org-src-container">
 <pre class="src src-conf">[<span style="color: #228b22;">urgency_low</span>]
   <span style="color: #b8860b;">background</span> = <span style="color: #bc8f8f;">"#3b4252"</span>
@@ -578,8 +578,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="org048a032"></a>Ignore transient in history<br />
-<div class="outline-text-5" id="text-org048a032">
+<li><a id="org606b091"></a>Ignore transient in history<br />
+<div class="outline-text-5" id="text-org606b091">
 <div class="org-src-container">
 <pre class="src src-conf">[<span style="color: #228b22;">transient_history_ignore</span>]
   <span style="color: #b8860b;">match_transient</span> = yes
@@ -588,8 +588,8 @@ This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a
 </div>
 </div>
 </li>
-<li><a id="org9892330"></a>Allow critical notification on fullscreen<br />
-<div class="outline-text-5" id="text-org9892330">
+<li><a id="org0f40f84"></a>Allow critical notification on fullscreen<br />
+<div class="outline-text-5" id="text-org0f40f84">
 <div class="org-src-container">
 <pre class="src src-conf">[<span style="color: #228b22;">fullscreen_show_critical</span>]
   <span style="color: #b8860b;">msg_urgency</span> = critical
@@ -606,13 +606,13 @@ This is mostly the base configuration file, and each configuration in it will be
 </div>
 </div>
 </div>
-<div id="outline-container-org746c744" class="outline-2">
-<h2 id="org746c744">Scripts</h2>
-<div class="outline-text-2" id="text-org746c744">
+<div id="outline-container-org772436a" class="outline-2">
+<h2 id="org772436a">Scripts</h2>
+<div class="outline-text-2" id="text-org772436a">
 </div>
-<div id="outline-container-orgb6b3bef" class="outline-3">
-<h3 id="orgb6b3bef">dunst-backlight</h3>
-<div class="outline-text-3" id="text-orgb6b3bef">
+<div id="outline-container-org211ae9a" class="outline-3">
+<h3 id="org211ae9a">dunst-backlight</h3>
+<div class="outline-text-3" id="text-org211ae9a">
 <div class="org-src-container">
 <pre class="src src-sh"><span style="color: #b22222;"># </span><span style="color: #b22222;">original script from https://wiki.archlinux.org/index.php/Dunst</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;"><a href="mailto:alexforsale%40yahoo.com">&lt;alexforsale@yahoo.com&gt;</a></span>
@@ -646,9 +646,9 @@ canberra-gtk-play -i audio-volume-change -d <span style="color: #bc8f8f;">"chang
 </div>
 </div>
 </div>
-<div id="outline-container-org39330b4" class="outline-3">
-<h3 id="org39330b4">dunst-volume</h3>
-<div class="outline-text-3" id="text-org39330b4">
+<div id="outline-container-orga33efa9" class="outline-3">
+<h3 id="orga33efa9">dunst-volume</h3>
+<div class="outline-text-3" id="text-orga33efa9">
 <div class="org-src-container">
 <pre class="src src-sh"><span style="color: #b22222;"># </span><span style="color: #b22222;">original script from https://wiki.archlinux.org/index.php/Dunst</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;"><a href="mailto:alexforsale%40yahoo.com">&lt;alexforsale@yahoo.com&gt;</a></span>
@@ -696,7 +696,7 @@ canberra-gtk-play -i audio-volume-change -d <span style="color: #bc8f8f;">"chang
 <div id="postamble" class="status">
 <p class="date">Date: 2024-10-24 Thu 00:00</p>
 <p class="author">Author: Kristian Alexander P</p>
-<p class="date">Created: 2025-05-05 Mon 14:47</p>
+<p class="date">Created: 2025-05-07 Wed 04:52</p>
 </div>
 </body>
 </html>
