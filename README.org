@@ -25,4 +25,5 @@
 
 * About
 [[./assets/img/dunst-2025-05-07_12-40.png]]
+Dunst is a lightweight and customizable notification daemon.
 This repository is a part of a collection of my [[https://github.com/alexforsale/dotfiles/][dotfiles]]. Please see [[./index.org][index.org]] for details.
