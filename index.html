@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-05-07 Wed 05:44 -->
+<!-- 2025-05-10 Sat 13:52 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Dunstrc</title>
@@ -60,77 +60,77 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgcee3f16">Configuration File</a>
+<li><a href="#org93cadc9">Configuration File</a>
 <ul>
-<li><a href="#orgdbd5583">dunstrc</a>
+<li><a href="#orgb6ed595">dunstrc</a>
 <ul>
-<li><a href="#orgaccafca">Global Section</a>
+<li><a href="#org319c18d">Global Section</a>
 <ul>
-<li><a href="#org99e6a3a">Monitor</a></li>
-<li><a href="#org2f6255f">Display notification on focused monitors.</a></li>
-<li><a href="#org1d4712e">Geometry</a></li>
-<li><a href="#org2949e96">Maximum number of notification</a></li>
-<li><a href="#org2d07572">Progress bar</a></li>
-<li><a href="#org38cb7ce">Indicate hidden</a></li>
-<li><a href="#org52981e0">Transparency</a></li>
-<li><a href="#org188b398">Separator height</a></li>
-<li><a href="#org9b29d38">Padding</a></li>
-<li><a href="#orgbfdbe99">Frame width and color</a></li>
-<li><a href="#org9fad550">Gap size</a></li>
-<li><a href="#orgba873cc">Separator color</a></li>
-<li><a href="#orga4a681d">Sort message by urgency</a></li>
-<li><a href="#orgc0706f4">Idle threshold</a></li>
-<li><a href="#orgc082131">Font</a></li>
-<li><a href="#orga943953">Line height</a></li>
-<li><a href="#orgaa07b85">Markup</a></li>
-<li><a href="#org89845d4">Message format</a></li>
-<li><a href="#org3e3e7e0">Alignments</a></li>
-<li><a href="#orgdca3b2d">Age threshold</a></li>
-<li><a href="#org55d654b">Ellipsize</a></li>
-<li><a href="#org13d805d">Ignore newline</a></li>
-<li><a href="#orgdbc6249">Duplicates</a></li>
-<li><a href="#orgd2cdbdc">URL and action indicator</a></li>
-<li><a href="#orgd82df44">Icons</a></li>
-<li><a href="#org7c62633">History</a></li>
-<li><a href="#orgbda22fe">Misc</a></li>
-<li><a href="#orged9feea">experimental</a></li>
-<li><a href="#org046fd41">Urgency</a></li>
-<li><a href="#org4e906f2">Ignore transient in history</a></li>
-<li><a href="#orge3cbe92">Allow critical notification on fullscreen</a></li>
+<li><a href="#org9acc46f">Monitor</a></li>
+<li><a href="#orga99b235">Display notification on focused monitors.</a></li>
+<li><a href="#orge045f1a">Geometry</a></li>
+<li><a href="#org6709210">Maximum number of notification</a></li>
+<li><a href="#org85b6eea">Progress bar</a></li>
+<li><a href="#orgc8ac20a">Indicate hidden</a></li>
+<li><a href="#org2fded39">Transparency</a></li>
+<li><a href="#org6532d68">Separator height</a></li>
+<li><a href="#org6231fb6">Padding</a></li>
+<li><a href="#org0475c80">Frame width and color</a></li>
+<li><a href="#orga24bdc1">Gap size</a></li>
+<li><a href="#orgf782335">Separator color</a></li>
+<li><a href="#org72b184b">Sort message by urgency</a></li>
+<li><a href="#org76391a5">Idle threshold</a></li>
+<li><a href="#org8acabda">Font</a></li>
+<li><a href="#org1c872f5">Line height</a></li>
+<li><a href="#orge200e25">Markup</a></li>
+<li><a href="#org4cdf1dd">Message format</a></li>
+<li><a href="#org6d1d01a">Alignments</a></li>
+<li><a href="#orge2f71c1">Age threshold</a></li>
+<li><a href="#orgef3d878">Ellipsize</a></li>
+<li><a href="#org58d28a5">Ignore newline</a></li>
+<li><a href="#orgb180a35">Duplicates</a></li>
+<li><a href="#org23ba3c8">URL and action indicator</a></li>
+<li><a href="#orgf24c6eb">Icons</a></li>
+<li><a href="#org175c7d0">History</a></li>
+<li><a href="#orgdc684af">Misc</a></li>
+<li><a href="#org0c56f21">experimental</a></li>
+<li><a href="#org4b9a637">Urgency</a></li>
+<li><a href="#org44e8f6e">Ignore transient in history</a></li>
+<li><a href="#org3e6ddd9">Allow critical notification on fullscreen</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org2b27def">Scripts</a>
+<li><a href="#org542e847">Scripts</a>
 <ul>
-<li><a href="#org835561a">dunst-backlight</a></li>
-<li><a href="#org8e5d6c0">dunst-volume</a></li>
+<li><a href="#org6835e08">dunst-backlight</a></li>
+<li><a href="#orgd79df99">dunst-volume</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 <p>
-This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a></i> configuration files.
+This is my personal <i><a href="https://github.com/dunst-project/dunst">dunst</a></i> configuration files. Dunst is a lightweight and customizable notification daemon. It's very modular and easily to customize so I've been using this as a notification daemon in mostly all my <i>window manager</i> configuration.
 <img src="./assets/img/dunst-2025-05-07_12-40.png" alt="dunst-2025-05-07_12-40.png" />
 </p>
-<div id="outline-container-orgcee3f16" class="outline-2">
-<h2 id="orgcee3f16">Configuration File</h2>
-<div class="outline-text-2" id="text-orgcee3f16">
+<div id="outline-container-org93cadc9" class="outline-2">
+<h2 id="org93cadc9">Configuration File</h2>
+<div class="outline-text-2" id="text-org93cadc9">
 </div>
-<div id="outline-container-orgdbd5583" class="outline-3">
-<h3 id="orgdbd5583">dunstrc</h3>
-<div class="outline-text-3" id="text-orgdbd5583">
+<div id="outline-container-orgb6ed595" class="outline-3">
+<h3 id="orgb6ed595">dunstrc</h3>
+<div class="outline-text-3" id="text-orgb6ed595">
 </div>
-<div id="outline-container-orgaccafca" class="outline-4">
-<h4 id="orgaccafca">Global Section</h4>
-<div class="outline-text-4" id="text-orgaccafca">
+<div id="outline-container-org319c18d" class="outline-4">
+<h4 id="org319c18d">Global Section</h4>
+<div class="outline-text-4" id="text-org319c18d">
 </div>
-<div id="outline-container-org99e6a3a" class="outline-5">
-<h5 id="org99e6a3a">Monitor</h5>
-<div class="outline-text-5" id="text-org99e6a3a">
+<div id="outline-container-org9acc46f" class="outline-5">
+<h5 id="org9acc46f">Monitor</h5>
+<div class="outline-text-5" id="text-org9acc46f">
 <p>
 Which monitor should the notifications be displayed on.
 </p>
@@ -141,9 +141,9 @@ Which monitor should the notifications be displayed on.
 </div>
 </div>
 </div>
-<div id="outline-container-org2f6255f" class="outline-5">
-<h5 id="org2f6255f">Display notification on focused monitors.</h5>
-<div class="outline-text-5" id="text-org2f6255f">
+<div id="outline-container-orga99b235" class="outline-5">
+<h5 id="orga99b235">Display notification on focused monitors.</h5>
+<div class="outline-text-5" id="text-orga99b235">
 <p>
 Display notification on focused monitor.  Possible modes are:
 </p>
@@ -163,9 +163,9 @@ If this option is set to mouse or keyboard, the monitor option will be ignored.
 </div>
 </div>
 </div>
-<div id="outline-container-org1d4712e" class="outline-5">
-<h5 id="org1d4712e">Geometry</h5>
-<div class="outline-text-5" id="text-org1d4712e">
+<div id="outline-container-orge045f1a" class="outline-5">
+<h5 id="orge045f1a">Geometry</h5>
+<div class="outline-text-5" id="text-orge045f1a">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;">### </span><span style="color: #b22222;">Geometry ###</span>
 
@@ -189,9 +189,9 @@ If this option is set to mouse or keyboard, the monitor option will be ignored.
 </div>
 </div>
 </div>
-<div id="outline-container-org2949e96" class="outline-5">
-<h5 id="org2949e96">Maximum number of notification</h5>
-<div class="outline-text-5" id="text-org2949e96">
+<div id="outline-container-org6709210" class="outline-5">
+<h5 id="org6709210">Maximum number of notification</h5>
+<div class="outline-text-5" id="text-org6709210">
 <p>
 Maximum number of notification (0 means no limit)
 </p>
@@ -201,9 +201,9 @@ Maximum number of notification (0 means no limit)
 </div>
 </div>
 </div>
-<div id="outline-container-org2d07572" class="outline-5">
-<h5 id="org2d07572">Progress bar</h5>
-<div class="outline-text-5" id="text-org2d07572">
+<div id="outline-container-org85b6eea" class="outline-5">
+<h5 id="org85b6eea">Progress bar</h5>
+<div class="outline-text-5" id="text-org85b6eea">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;">### </span><span style="color: #b22222;">Progress bar ###</span>
 
@@ -237,9 +237,9 @@ Maximum number of notification (0 means no limit)
 </div>
 </div>
 </div>
-<div id="outline-container-org38cb7ce" class="outline-5">
-<h5 id="org38cb7ce">Indicate hidden</h5>
-<div class="outline-text-5" id="text-org38cb7ce">
+<div id="outline-container-orgc8ac20a" class="outline-5">
+<h5 id="orgc8ac20a">Indicate hidden</h5>
+<div class="outline-text-5" id="text-orgc8ac20a">
 <p>
 Show how many messages are currently hidden (because of notification_limit).
 </p>
@@ -249,9 +249,9 @@ Show how many messages are currently hidden (because of notification_limit).
 </div>
 </div>
 </div>
-<div id="outline-container-org52981e0" class="outline-5">
-<h5 id="org52981e0">Transparency</h5>
-<div class="outline-text-5" id="text-org52981e0">
+<div id="outline-container-org2fded39" class="outline-5">
+<h5 id="org2fded39">Transparency</h5>
+<div class="outline-text-5" id="text-org2fded39">
 <p>
 The transparency of the window.  Range: [0; 100]. This option will only work if a compositing window manager is present (e.g. <i>xcompmgr</i>, <i>compiz</i>, etc.). (X11 only)
 </p>
@@ -261,9 +261,9 @@ The transparency of the window.  Range: [0; 100]. This option will only work if 
 </div>
 </div>
 </div>
-<div id="outline-container-org188b398" class="outline-5">
-<h5 id="org188b398">Separator height</h5>
-<div class="outline-text-5" id="text-org188b398">
+<div id="outline-container-org6532d68" class="outline-5">
+<h5 id="org6532d68">Separator height</h5>
+<div class="outline-text-5" id="text-org6532d68">
 <p>
 Draw a line of "separator_height" pixel height between two notifications. Set to 0 to disable. If gap_size is greater than 0, this setting will be ignored.
 </p>
@@ -273,9 +273,9 @@ Draw a line of "separator_height" pixel height between two notifications. Set to
 </div>
 </div>
 </div>
-<div id="outline-container-org9b29d38" class="outline-5">
-<h5 id="org9b29d38">Padding</h5>
-<div class="outline-text-5" id="text-org9b29d38">
+<div id="outline-container-org6231fb6" class="outline-5">
+<h5 id="org6231fb6">Padding</h5>
+<div class="outline-text-5" id="text-org6231fb6">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Padding between text and separator.</span>
 <span style="color: #b8860b;">padding</span> = 8
@@ -289,9 +289,9 @@ Draw a line of "separator_height" pixel height between two notifications. Set to
 </div>
 </div>
 </div>
-<div id="outline-container-orgbfdbe99" class="outline-5">
-<h5 id="orgbfdbe99">Frame width and color</h5>
-<div class="outline-text-5" id="text-orgbfdbe99">
+<div id="outline-container-org0475c80" class="outline-5">
+<h5 id="org0475c80">Frame width and color</h5>
+<div class="outline-text-5" id="text-org0475c80">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Defines width in pixels of frame around the notification window.</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">Set to 0 to disable.</span>
@@ -303,9 +303,9 @@ Draw a line of "separator_height" pixel height between two notifications. Set to
 </div>
 </div>
 </div>
-<div id="outline-container-org9fad550" class="outline-5">
-<h5 id="org9fad550">Gap size</h5>
-<div class="outline-text-5" id="text-org9fad550">
+<div id="outline-container-orga24bdc1" class="outline-5">
+<h5 id="orga24bdc1">Gap size</h5>
+<div class="outline-text-5" id="text-orga24bdc1">
 <p>
 Size of gap to display between notifications - requires a compositor. If value is greater than 0, separator_height will be ignored and a border of size frame_width will be drawn around each notification instead. Click events on gaps do not currently propagate to applications below.
 </p>
@@ -315,9 +315,9 @@ Size of gap to display between notifications - requires a compositor. If value i
 </div>
 </div>
 </div>
-<div id="outline-container-orgba873cc" class="outline-5">
-<h5 id="orgba873cc">Separator color</h5>
-<div class="outline-text-5" id="text-orgba873cc">
+<div id="outline-container-orgf782335" class="outline-5">
+<h5 id="orgf782335">Separator color</h5>
+<div class="outline-text-5" id="text-orgf782335">
 <p>
 Define a color for the separator.
 possible values are:
@@ -336,18 +336,18 @@ anything else will be interpreted as a X color.
 </div>
 </div>
 </div>
-<div id="outline-container-orga4a681d" class="outline-5">
-<h5 id="orga4a681d">Sort message by urgency</h5>
-<div class="outline-text-5" id="text-orga4a681d">
+<div id="outline-container-org72b184b" class="outline-5">
+<h5 id="org72b184b">Sort message by urgency</h5>
+<div class="outline-text-5" id="text-org72b184b">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">sort</span> = yes
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgc0706f4" class="outline-5">
-<h5 id="orgc0706f4">Idle threshold</h5>
-<div class="outline-text-5" id="text-orgc0706f4">
+<div id="outline-container-org76391a5" class="outline-5">
+<h5 id="org76391a5">Idle threshold</h5>
+<div class="outline-text-5" id="text-org76391a5">
 <p>
 Don't remove messages, if the user is idle (no mouse or keyboard input) for longer than idle_threshold seconds. Set to 0 to disable. A client can set the 'transient' hint to bypass this. See the rules section for how to disable this if necessary
 </p>
@@ -357,18 +357,18 @@ Don't remove messages, if the user is idle (no mouse or keyboard input) for long
 </div>
 </div>
 </div>
-<div id="outline-container-orgc082131" class="outline-5">
-<h5 id="orgc082131">Font</h5>
-<div class="outline-text-5" id="text-orgc082131">
+<div id="outline-container-org8acabda" class="outline-5">
+<h5 id="org8acabda">Font</h5>
+<div class="outline-text-5" id="text-org8acabda">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b8860b;">font</span> = JetBrainsMonoNL Nerd Font Mono 8
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orga943953" class="outline-5">
-<h5 id="orga943953">Line height</h5>
-<div class="outline-text-5" id="text-orga943953">
+<div id="outline-container-org1c872f5" class="outline-5">
+<h5 id="org1c872f5">Line height</h5>
+<div class="outline-text-5" id="text-org1c872f5">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">The spacing between lines.  If the height is smaller than the</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">font height, it will get raised to the font height.</span>
@@ -377,9 +377,9 @@ Don't remove messages, if the user is idle (no mouse or keyboard input) for long
 </div>
 </div>
 </div>
-<div id="outline-container-orgaa07b85" class="outline-5">
-<h5 id="orgaa07b85">Markup</h5>
-<div class="outline-text-5" id="text-orgaa07b85">
+<div id="outline-container-orge200e25" class="outline-5">
+<h5 id="orge200e25">Markup</h5>
+<div class="outline-text-5" id="text-orge200e25">
 <p>
 Possible values are:
 </p>
@@ -409,9 +409,9 @@ It's important to note that markup inside the format option will be parsed regar
 </div>
 </div>
 </div>
-<div id="outline-container-org89845d4" class="outline-5">
-<h5 id="org89845d4">Message format</h5>
-<div class="outline-text-5" id="text-org89845d4">
+<div id="outline-container-org4cdf1dd" class="outline-5">
+<h5 id="org4cdf1dd">Message format</h5>
+<div class="outline-text-5" id="text-org4cdf1dd">
 <p>
 The format of the message.  Possible variables are:
 </p>
@@ -429,14 +429,14 @@ The format of the message.  Possible variables are:
 Markup is allowed
 </p>
 <div class="org-src-container">
-<pre class="src src-conf"><span style="color: #b8860b;">format</span> = <span style="color: #bc8f8f;">"&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#2aa198'&gt;%s&lt;/span&gt;\n&lt;span foreground='#f9f9f9'&gt;%b&lt;/span&gt;\n&lt;span foreground='#eee8d5'&gt;%p&lt;/span&gt;\n\n&lt;span foreground='#859900' font_style='italic' font_stretch='condensed'&gt;%a&lt;/span&gt;"</span>
+<pre class="src src-conf"><span style="color: #b8860b;">format</span> = <span style="color: #bc8f8f;">"&lt;span size='x-large' font_desc='Cantarell,JetBrainsMonoNL Nerd Font Mono 10' weight='bold' foreground='#2aa198'&gt;%s&lt;/span&gt;\n&lt;span foreground='#f9f9f9'&gt;%b&lt;/span&gt;\n&lt;span foreground='#859900' font_style='italic' font_stretch='condensed'&gt;%a&lt;/span&gt;"</span>
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org3e3e7e0" class="outline-5">
-<h5 id="org3e3e7e0">Alignments</h5>
-<div class="outline-text-5" id="text-org3e3e7e0">
+<div id="outline-container-org6d1d01a" class="outline-5">
+<h5 id="org6d1d01a">Alignments</h5>
+<div class="outline-text-5" id="text-org6d1d01a">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Alignment of message text.</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">Possible values are "left", "center" and "right".</span>
@@ -449,9 +449,9 @@ Markup is allowed
 </div>
 </div>
 </div>
-<div id="outline-container-orgdca3b2d" class="outline-5">
-<h5 id="orgdca3b2d">Age threshold</h5>
-<div class="outline-text-5" id="text-orgdca3b2d">
+<div id="outline-container-orge2f71c1" class="outline-5">
+<h5 id="orge2f71c1">Age threshold</h5>
+<div class="outline-text-5" id="text-orge2f71c1">
 <p>
 Show age of message if message is older than show_age_threshold seconds. Set to -1 to disable.
 </p>
@@ -461,9 +461,9 @@ Show age of message if message is older than show_age_threshold seconds. Set to 
 </div>
 </div>
 </div>
-<div id="outline-container-org55d654b" class="outline-5">
-<h5 id="org55d654b">Ellipsize</h5>
-<div class="outline-text-5" id="text-org55d654b">
+<div id="outline-container-orgef3d878" class="outline-5">
+<h5 id="orgef3d878">Ellipsize</h5>
+<div class="outline-text-5" id="text-orgef3d878">
 <p>
 Specify where to make an ellipsis in long lines. Possible values are "start", "middle" and "end".
 </p>
@@ -473,9 +473,9 @@ Specify where to make an ellipsis in long lines. Possible values are "start", "m
 </div>
 </div>
 </div>
-<div id="outline-container-org13d805d" class="outline-5">
-<h5 id="org13d805d">Ignore newline</h5>
-<div class="outline-text-5" id="text-org13d805d">
+<div id="outline-container-org58d28a5" class="outline-5">
+<h5 id="org58d28a5">Ignore newline</h5>
+<div class="outline-text-5" id="text-org58d28a5">
 <p>
 Ignore newlines '\n' in notifications.
 </p>
@@ -485,9 +485,9 @@ Ignore newlines '\n' in notifications.
 </div>
 </div>
 </div>
-<div id="outline-container-orgdbc6249" class="outline-5">
-<h5 id="orgdbc6249">Duplicates</h5>
-<div class="outline-text-5" id="text-orgdbc6249">
+<div id="outline-container-orgb180a35" class="outline-5">
+<h5 id="orgb180a35">Duplicates</h5>
+<div class="outline-text-5" id="text-orgb180a35">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Stack together notifications with the same content</span>
 <span style="color: #b8860b;">stack_duplicates</span> = true
@@ -498,9 +498,9 @@ Ignore newlines '\n' in notifications.
 </div>
 </div>
 </div>
-<div id="outline-container-orgd2cdbdc" class="outline-5">
-<h5 id="orgd2cdbdc">URL and action indicator</h5>
-<div class="outline-text-5" id="text-orgd2cdbdc">
+<div id="outline-container-org23ba3c8" class="outline-5">
+<h5 id="org23ba3c8">URL and action indicator</h5>
+<div class="outline-text-5" id="text-org23ba3c8">
 <p>
 Display indicators for URLs (U) and actions (A).
 </p>
@@ -510,9 +510,9 @@ Display indicators for URLs (U) and actions (A).
 </div>
 </div>
 </div>
-<div id="outline-container-orgd82df44" class="outline-5">
-<h5 id="orgd82df44">Icons</h5>
-<div class="outline-text-5" id="text-orgd82df44">
+<div id="outline-container-orgf24c6eb" class="outline-5">
+<h5 id="orgf24c6eb">Icons</h5>
+<div class="outline-text-5" id="text-orgf24c6eb">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;">### </span><span style="color: #b22222;">Icons ###</span>
 
@@ -542,9 +542,9 @@ Display indicators for URLs (U) and actions (A).
 </div>
 </div>
 </div>
-<div id="outline-container-org7c62633" class="outline-5">
-<h5 id="org7c62633">History</h5>
-<div class="outline-text-5" id="text-org7c62633">
+<div id="outline-container-org175c7d0" class="outline-5">
+<h5 id="org175c7d0">History</h5>
+<div class="outline-text-5" id="text-org175c7d0">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;">### </span><span style="color: #b22222;">History ###</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">Should a notification popped up from history be sticky or timeout</span>
@@ -557,9 +557,9 @@ Display indicators for URLs (U) and actions (A).
 </div>
 </div>
 </div>
-<div id="outline-container-orgbda22fe" class="outline-5">
-<h5 id="orgbda22fe">Misc</h5>
-<div class="outline-text-5" id="text-orgbda22fe">
+<div id="outline-container-orgdc684af" class="outline-5">
+<h5 id="orgdc684af">Misc</h5>
+<div class="outline-text-5" id="text-orgdc684af">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;">### </span><span style="color: #b22222;">Misc/Advanced ###</span>
 
@@ -643,9 +643,9 @@ Display indicators for URLs (U) and actions (A).
 </div>
 </div>
 </div>
-<div id="outline-container-orged9feea" class="outline-5">
-<h5 id="orged9feea">experimental</h5>
-<div class="outline-text-5" id="text-orged9feea">
+<div id="outline-container-org0c56f21" class="outline-5">
+<h5 id="org0c56f21">experimental</h5>
+<div class="outline-text-5" id="text-org0c56f21">
 <div class="org-src-container">
 <pre class="src src-conf"><span style="color: #b22222;"># </span><span style="color: #b22222;">Experimental features that may or may not work correctly. Do not expect them</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;">to have a consistent behaviour across releases.</span>
@@ -660,9 +660,9 @@ Display indicators for URLs (U) and actions (A).
 </div>
 </div>
 </div>
-<div id="outline-container-org046fd41" class="outline-5">
-<h5 id="org046fd41">Urgency</h5>
-<div class="outline-text-5" id="text-org046fd41">
+<div id="outline-container-org4b9a637" class="outline-5">
+<h5 id="org4b9a637">Urgency</h5>
+<div class="outline-text-5" id="text-org4b9a637">
 <div class="org-src-container">
 <pre class="src src-conf">[<span style="color: #228b22;">urgency_low</span>]
   <span style="color: #b8860b;">background</span> = <span style="color: #bc8f8f;">"#3b4252"</span>
@@ -686,9 +686,9 @@ Display indicators for URLs (U) and actions (A).
 </div>
 </div>
 </div>
-<div id="outline-container-org4e906f2" class="outline-5">
-<h5 id="org4e906f2">Ignore transient in history</h5>
-<div class="outline-text-5" id="text-org4e906f2">
+<div id="outline-container-org44e8f6e" class="outline-5">
+<h5 id="org44e8f6e">Ignore transient in history</h5>
+<div class="outline-text-5" id="text-org44e8f6e">
 <div class="org-src-container">
 <pre class="src src-conf">[<span style="color: #228b22;">transient_history_ignore</span>]
   <span style="color: #b8860b;">match_transient</span> = yes
@@ -697,9 +697,9 @@ Display indicators for URLs (U) and actions (A).
 </div>
 </div>
 </div>
-<div id="outline-container-orge3cbe92" class="outline-5">
-<h5 id="orge3cbe92">Allow critical notification on fullscreen</h5>
-<div class="outline-text-5" id="text-orge3cbe92">
+<div id="outline-container-org3e6ddd9" class="outline-5">
+<h5 id="org3e6ddd9">Allow critical notification on fullscreen</h5>
+<div class="outline-text-5" id="text-org3e6ddd9">
 <div class="org-src-container">
 <pre class="src src-conf">[<span style="color: #228b22;">fullscreen_show_critical</span>]
   <span style="color: #b8860b;">msg_urgency</span> = critical
@@ -715,13 +715,13 @@ This is mostly the base configuration file, and each configuration in it will be
 </div>
 </div>
 </div>
-<div id="outline-container-org2b27def" class="outline-2">
-<h2 id="org2b27def">Scripts</h2>
-<div class="outline-text-2" id="text-org2b27def">
+<div id="outline-container-org542e847" class="outline-2">
+<h2 id="org542e847">Scripts</h2>
+<div class="outline-text-2" id="text-org542e847">
 </div>
-<div id="outline-container-org835561a" class="outline-3">
-<h3 id="org835561a">dunst-backlight</h3>
-<div class="outline-text-3" id="text-org835561a">
+<div id="outline-container-org6835e08" class="outline-3">
+<h3 id="org6835e08">dunst-backlight</h3>
+<div class="outline-text-3" id="text-org6835e08">
 <div class="org-src-container">
 <pre class="src src-sh"><span style="color: #b22222;"># </span><span style="color: #b22222;">original script from https://wiki.archlinux.org/index.php/Dunst</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;"><a href="mailto:alexforsale%40yahoo.com">&lt;alexforsale@yahoo.com&gt;</a></span>
@@ -755,9 +755,9 @@ canberra-gtk-play -i audio-volume-change -d <span style="color: #bc8f8f;">"chang
 </div>
 </div>
 </div>
-<div id="outline-container-org8e5d6c0" class="outline-3">
-<h3 id="org8e5d6c0">dunst-volume</h3>
-<div class="outline-text-3" id="text-org8e5d6c0">
+<div id="outline-container-orgd79df99" class="outline-3">
+<h3 id="orgd79df99">dunst-volume</h3>
+<div class="outline-text-3" id="text-orgd79df99">
 <div class="org-src-container">
 <pre class="src src-sh"><span style="color: #b22222;"># </span><span style="color: #b22222;">original script from https://wiki.archlinux.org/index.php/Dunst</span>
 <span style="color: #b22222;"># </span><span style="color: #b22222;"><a href="mailto:alexforsale%40yahoo.com">&lt;alexforsale@yahoo.com&gt;</a></span>
@@ -805,7 +805,7 @@ canberra-gtk-play -i audio-volume-change -d <span style="color: #bc8f8f;">"chang
 <div id="postamble" class="status">
 <p class="date">Date: 2024-10-24 Thu 00:00</p>
 <p class="author">Author: Kristian Alexander P</p>
-<p class="date">Created: 2025-05-07 Wed 05:44</p>
+<p class="date">Created: 2025-05-10 Sat 13:52</p>
 </div>
 </body>
 </html>
